@@ -21,12 +21,13 @@ public class CountingOfChar {
      
 	}
 
-	private void getCountOfCharacters(String str) {
+	private void getCountOfCharacters(String strr) {
 		
 		// converting string into arraylist 
 		HashMap<Character ,Integer> map =new HashMap<Character, Integer>() ;
-		System.out.println(str.trim());
-		 
+		
+		String str = strr.replaceAll("\\s", "");
+		 System.out.println(str);
 		for (int i = 0 ; i< str.length() ;i++)
 		{
 			if (map.containsKey(str.charAt(i)))
